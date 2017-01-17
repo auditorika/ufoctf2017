@@ -22,13 +22,13 @@ gulp.task('serv', function () {
 
 //styles
 gulp.task('style', function () {
-    return gulp.src('app/sass/**/*.sass')
+    return gulp.src('app/sass/assets/**/*.sass')
         .pipe(sass().on('error', sass.logError))
         .pipe(prefix({
             browsers: ['last 5 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('app/css'));
+        .pipe(gulp.dest('app/assets/css'));
 });
 
 
@@ -46,7 +46,7 @@ gulp.task('build', function () {
 
 
 gulp.task('watch', function () {
-    gulp.watch('app/sass/**/*.sass', ['style'] );
+    gulp.watch('app/sass/assets/**/*.sass', ['style'] );
 
 });
 
