@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ufoctf2017">
+<head>
+    <meta charset="UTF-8">
+    <title>ufoctf2017</title>
+
+    <!-- TODO: add meta tags -->
+
+    
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+
+
+
+<h2>{{ 'HEADLINE' | translate }}</h2>
+
+<div class="span4">
+    <div class="well">
+        <h2 translate="TITLE">Hello</h2>
+        <p translate="FOO">This is a paragraph</p>
+    </div>
+    <div ng-controller="Ctrl">
+        <button class="btn" ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN" class="ng-scope">english</button>
+        <button class="btn" ng-click="changeLanguage('ru')" translate="BUTTON_LANG_RU" class="ng-scope">russian</button>
+    </div>
+</div>
+
+
+
+<script src="js/vendor.min.js"></script>
+
+<script src="js/main.min.js"></script>
+
+
+</body>
+</html>
