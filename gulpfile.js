@@ -32,6 +32,8 @@ gulp.task('style', function () {
 });
 
 
+// gulp.src(['input/folder/**/*']).pipe(gulp.dest('output/folder'));
+
 //build
 gulp.task('build', function () {
     return gulp.src('app/*.html')
